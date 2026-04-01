@@ -1,0 +1,13 @@
+{
+    "name": "@olegpoliakov/tasks-db",
+    "version": "0.1.0",
+    "type": "module",
+    "exports": {
+        ".": "./src/index.ts",
+        "./schemas": "./src/schemas/index.ts"
+    },
+    "dependencies": {
+        "mongodb": "^7.1.1",
+        "mongoose": "^9.3.3"
+    }
+}
