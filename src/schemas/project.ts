@@ -1,4 +1,4 @@
-import type { Project, ProjectSection, Task } from '@olegpoliakov/tasks-core';
+import type { Project, ProjectSection, Task } from '@olegpoliakov/tasks/core';
 import { type Model, Schema } from 'mongoose';
 
 type ProjectVirtuals = {

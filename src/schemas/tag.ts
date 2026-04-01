@@ -1,4 +1,4 @@
-import type { Tag } from '@olegpoliakov/tasks-core';
+import type { Tag } from '@olegpoliakov/tasks/core';
 import { Schema } from 'mongoose';
 
 const TagSchema = new Schema<Tag>({

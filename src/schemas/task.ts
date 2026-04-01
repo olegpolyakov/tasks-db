@@ -1,4 +1,4 @@
-import { Task, TaskPriority } from '@olegpoliakov/tasks-core';
+import { Task, TaskPriority } from '@olegpoliakov/tasks/core';
 import { Schema } from 'mongoose';
 
 const TaskSchema = new Schema<Task>({
