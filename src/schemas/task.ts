@@ -1,5 +1,6 @@
-import { Task, TaskPriority } from '@olegpoliakov/tasks/core';
 import { Schema } from 'mongoose';
+
+import { Task, TaskPriority } from '@olegpolyakov/tasks/core';
 
 const TaskSchema = new Schema<Task>({
     title: { type: String, required: true },
@@ -7,8 +8,12 @@ const TaskSchema = new Schema<Task>({
     content: { type: String },
     dueDate: { type: Date },
     priority: {
-        type: String,
-        enum: Object.values(TaskPriority),
+        type: Number,
+        enum: [
+            TaskPriority.Low,
+            TaskPriority.Medium,
+            TaskPriority.High
+        ],
         default: TaskPriority.Medium
     },
     tagIds: { type: [String], default: [] },

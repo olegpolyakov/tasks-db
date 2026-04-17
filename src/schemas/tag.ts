@@ -1,5 +1,6 @@
-import type { Tag } from '@olegpoliakov/tasks/core';
 import { Schema } from 'mongoose';
+
+import type { Tag } from '@olegpolyakov/tasks/core';
 
 const TagSchema = new Schema<Tag>({
     name: { type: String, required: true },

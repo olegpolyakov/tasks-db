@@ -1,5 +1,6 @@
-import type { Project, ProjectSection, Task } from '@olegpoliakov/tasks/core';
 import { type Model, Schema } from 'mongoose';
+
+import type { Project, ProjectSection, Task } from '@olegpolyakov/tasks/core';
 
 type ProjectVirtuals = {
     id: string;
@@ -11,8 +12,6 @@ type ProjectModel = Model<Project>;
 export const ProjectSectionSchema = new Schema<ProjectSection>({
     name: { type: String, required: true },
     taskIds: { type: [String], default: [] }
-}, {
-    _id: false
 });
 
 const ProjectSchema = new Schema<Project, ProjectModel, {}, {}, ProjectVirtuals>({
