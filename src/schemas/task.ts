@@ -16,8 +16,7 @@ const TaskSchema = new Schema<Task>({
         ],
         default: TaskPriority.Medium
     },
-    tagIds: { type: [String], default: [] },
-    projectIds: { type: [String], default: [] }
+    tagIds: { type: [String], default: [] }
 }, {
     timestamps: true
 });
